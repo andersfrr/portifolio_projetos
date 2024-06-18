@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -42,16 +43,36 @@
         }
         .img-small {
             max-width: 500px;
+            cursor: pointer;
         }
         hr {
             border: 1px solid #f39c12;
             margin: 40px 0;
         }
         section {
-            margin-bottom: 40px; /* Espaço entre seções */
+            margin-bottom: 40px;
         }
         .btn-primary {
-            margin-top: 20px; /* Espaço entre o botão e o texto acima */
+            margin-top: 20px;
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills-list li {
+            margin: 10px 15px;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+        }
+        .skills-list li i {
+            color: #f39c12;
+            margin-right: 10px;
+        }
+        .project-description {
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -79,73 +100,56 @@
     <section id="about">
         <h2>Sobre mim</h2>
         <p>Meu nome é Anderson Ferreira. Sou formado em Engenharia Civil e em Tecnologia em Informática.</p>
-        <p>Trabalhei como vendedor no comércio varejista de materiais de construção por alguns anos, como Administrador em uma clínica de hemodiálise e 
-		como analista de dados freelancer na área política. Atualmente, estou em transição de carreira para Análise de Dados, buscando adquirir experiência na solução de 
-		problemas de negócio e domínio sobre as ferramentas de análise de dados.</p>
-        <p>Estou buscando, também, uma oportunidade para trabalhar profissionalmente como Analista de Dados, para melhorar a tomada de decisão da empresa através da 
-		construção de soluções usando dados.</p>
+        <p>Trabalhei como vendedor no comércio varejista de materiais de construção por alguns anos, como Administrador em uma clínica de hemodiálise e como analista de dados freelancer na área política. Atualmente, estou em transição de carreira para Análise de Dados, buscando adquirir experiência na solução de problemas de negócio e domínio sobre as ferramentas de análise de dados.</p>
+        <p>Estou buscando, também, uma oportunidade para trabalhar profissionalmente como Analista de Dados, para melhorar a tomada de decisão da empresa através da construção de soluções usando dados.</p>
     </section>
-	<p> </p>
-<hr> <!-- Separador -->
+
+    <hr>
+
     <section id="skills">
         <h2>Habilidades</h2>
-        <ul>
-            <li>Linguagem SQL</li>
-            <li>Bancos de dados: SQLite, MySQL, SQL Server</li>
-            <li>Python com foco em análise de dados</li>
-            <li>Conceitos de ETL</li>
-            <li>Pensamento Estratégico</li>
-            <li>Estatística descritiva</li>
-            <li>Power BI, Matplotlib</li>
-            <li>GitHub, SQLite3 Database, SQL Server</li>
+        <ul class="skills-list">
+            <li><i class="fas fa-database"></i>Linguagem SQL</li>
+            <li><i class="fas fa-server"></i>Bancos de dados: SQLite, MySQL, SQL Server</li>
+            <li><i class="fas fa-python"></i>Python com foco em análise de dados</li>
+            <li><i class="fas fa-sync-alt"></i>Conceitos de ETL</li>
+            <li><i class="fas fa-brain"></i>Pensamento Estratégico</li>
+            <li><i class="fas fa-chart-bar"></i>Estatística descritiva</li>
+            <li><i class="fas fa-chart-line"></i>Power BI, Matplotlib</li>
+            <li><i class="fab fa-github"></i>GitHub, SQLite3 Database, SQL Server</li>
         </ul>
     </section>
-	<p> </p>
-<hr> <!-- Separador -->
-	
+
+    <hr>
+
     <section id="experience">
         <h2>Experiências Profissionais</h2>
         <h3>4+ Mellos Elétrica</h3>
-        <p>Inicialmente apenas como atuava como vendedor no ramo de materiais de construção responsável pelo atendimento ao cliente, pedidos junto aos fornecedores, 
-		cobrança de contas em atraso de clientes. Após algum tempo me tornei responsável, também, pela TI da empresa; utilizava Excel, SQL e Power BI para criar relatórios gráficos,
-		facilitando a análise de desempenho de vendas e vendedores.
-		Liderei uma equipe com 5 pessoas na loja física em que estava alocado e treinei funcionários, incluindo os das filiais, no uso dos sistemas da empresa. 
-		Participei da migração de sistema de vendas em 3 ocasiões, utilizando Excel e SQLite para a exportação, importação e tratamento das informações da base de dados.</p>
-<p>
-
-</p>
+        <p>Inicialmente apenas como atuava como vendedor no ramo de materiais de construção responsável pelo atendimento ao cliente, pedidos junto aos fornecedores, cobrança de contas em atraso de clientes. Após algum tempo me tornei responsável, também, pela TI da empresa; utilizava Excel, SQL e Power BI para criar relatórios gráficos, facilitando a análise de desempenho de vendas e vendedores. Liderei uma equipe com 5 pessoas na loja física em que estava alocado e treinei funcionários, incluindo os das filiais, no uso dos sistemas da empresa. Participei da migração de sistema de vendas em 3 ocasiões, utilizando Excel e SQLite para a exportação, importação e tratamento das informações da base de dados.</p>
+        
         <h3>4+ Inque - Instituto Nefrológico de Queimados</h3>
-        <p>Responsável por uma equipe de cerca de 40 profissionais multidisciplinares, cuidando do RH, financeiro, compras de insumos e gestão de contratos.
-	Utilizando Ecel criava relatórios para os gestores da empresa.
-	</p>
-<p>
-
-</p>
+        <p>Responsável por uma equipe de cerca de 40 profissionais multidisciplinares, cuidando do RH, financeiro, compras de insumos e gestão de contratos. Utilizando Excel criava relatórios para os gestores da empresa.</p>
+        
         <h3>7+ Tio Alo Materiais de Construção</h3>
-        <p>Vendedor no ramo de materiais de construção responsável pelo atendimento ao cliente, pedidos junto aos fornecedores, cobrança de contas em atraso de clientes
-		e apoio à equipe de entregadores.</p>
-	<p>
-	
-	</p>
-	<h3>10+ Analista de Dados Freelancer</h3>
-        <p>Trabalhando na área política entre 2006 e 2017, realizava a alimentação e a manutenção da base de dados, gerava estatísticas das eleições, filtrando por seção eleitoral, 
-		local de votação, bairro e cidade para auxiliar na estratégia de direcionamento de pessoal para as campanhas eleitorais tanto para eleições de prefeito e vereador, 
-		quanto para deputados federal e estadual. Utilizava SQL e Excel para gerar os relatórios. </p>
+        <p>Vendedor no ramo de materiais de construção responsável pelo atendimento ao cliente, pedidos junto aos fornecedores, cobrança de contas em atraso de clientes e apoio à equipe de entregadores.</p>
+        
+        <h3>10+ Analista de Dados Freelancer</h3>
+        <p>Trabalhando na área política entre 2006 e 2017, realizava a alimentação e a manutenção da base de dados, gerava estatísticas das eleições, filtrando por seção eleitoral, local de votação, bairro e cidade para auxiliar na estratégia de direcionamento de pessoal para as campanhas eleitorais tanto para eleições de prefeito e vereador, quanto para deputados federal e estadual. Utilizava SQL e Excel para gerar os relatórios.</p>
     </section>
-<p> 
 
-</p>
-	<hr> <!-- Separador -->
-     <section id="projects">
+    <hr>
+
+    <section id="projects">
         <h2>Projetos em Ciência de Dados</h2>
 
         <h3>Construção de um programa de fidelidade com clusterização de clientes</h3>
         <a href="img/loyalty.jpg" data-lightbox="projects" data-title="Clusterização de clientes">
             <img src="img/loyalty.jpg" alt="Clusterização de clientes" class="img-fluid img-small">
         </a>
-        <p>Usei Python, Estatística e técnicas de Machine Learning não supervisionadas para segmentar um grupo de clientes com base em suas características de compra, com o objetivo de formar um programa de fidelidade para aumentar a receita da empresa.</p>
+        <p class="project-description">Usei Python, Estatística e técnicas de Machine Learning não supervisionadas para segmentar um grupo de clientes com base em suas características de compra, com o objetivo de formar um programa de fidelidade para aumentar a receita da empresa.</p>
         <p><strong>Ferramentas utilizadas:</strong> Python, Pandas, Matplotlib, Jupyter Notebook, K-Means, Hierarchical Clustering, DBScan, Metabase Visualization</p>
         <a href="https://github.com/andersfrr/projeto01" class="btn btn-primary">Saiba Mais</a>
+
 
         <h3>Projeto de integração entre SQL Server e Excel</h3>
         <a href="img/print_dashboard.jpg" data-lightbox="projects" data-title="Dashboard em Excel">
