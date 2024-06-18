@@ -39,6 +39,10 @@
             padding: 1rem;
             text-align: center;
         }
+        .img-small {
+            max-width: 500px;
+            cursor: pointer; /* Adicionamos cursor pointer para indicar que a imagem é clicável */
+        }
     </style>
 </head>
 <body>
@@ -71,7 +75,8 @@
         <p>Estou buscando, também, uma oportunidade para trabalhar profissionalmente como Analista de Dados, para melhorar a tomada de decisão da empresa através da 
 		construção de soluções usando dados.</p>
     </section>
-
+	<p> </p>
+<hr> <!-- Separador -->
     <section id="skills">
         <h2>Habilidades</h2>
         <ul>
@@ -85,7 +90,8 @@
             <li>GitHub, SQLite3 Database, SQL Server</li>
         </ul>
     </section>
-
+	<p> </p>
+<hr> <!-- Separador -->
     <section id="experience">
         <h2>Experiências Profissionais</h2>
         <h3>4+ Mellos Elétrica</h3>
@@ -94,44 +100,59 @@
 		facilitando a análise de desempenho de vendas e vendedores.
 		Liderei uma equipe com 5 pessoas na loja física em que estava alocado e treinei funcionários, incluindo os das filiais, no uso dos sistemas da empresa. 
 		Participei da migração de sistema de vendas em 3 ocasiões, utilizando Excel e SQLite para a exportação, importação e tratamento das informações da base de dados.</p>
-
+<p> </p>
         <h3>4+ Inque - Instituto Nefrológico de Queimados</h3>
         <p>Responsável por uma equipe de cerca de 40 profissionais multidisciplinares, cuidando do RH, financeiro, compras de insumos e gestão de contratos.
 	Utilizando Ecel criava relatórios para os gestores da empresa.
 	</p>
-
+<p> </p>
         <h3>7+ Tio Alo Materiais de Construção</h3>
         <p>Vendedor no ramo de materiais de construção responsável pelo atendimento ao cliente, pedidos junto aos fornecedores, cobrança de contas em atraso de clientes
 		e apoio à equipe de entregadores.</p>
-	
+	<p> </p>
 	<h3>10+ Analista de Dados Freelancer</h3>
         <p>Trabalhando na área política entre 2006 e 2017, realizava a alimentação e a manutenção da base de dados, gerava estatísticas das eleições, filtrando por seção eleitoral, 
 		local de votação, bairro e cidade para auxiliar na estratégia de direcionamento de pessoal para as campanhas eleitorais tanto para eleições de prefeito e vereador, 
 		quanto para deputados federal e estadual. Utilizava SQL e Excel para gerar os relatórios. </p>
     </section>
-
+<p> </p>
+	<hr> <!-- Separador -->
     <section id="projects">
         <h2>Projetos em Ciência de Dados</h2>
 
-        <h3>Construção de um programa de fidelidade com clusterização de clientes</h3>
-        <img src="img/loyalty.jpg" alt="Clusterização de clientes" class="img-fluid" style="max-width: 350px"/>
+        h3>Construção de um programa de fidelidade com clusterização de clientes</h3>
+        <a href="#" data-toggle="modal" data-target="#imagemModal">
+            <img src="img/loyalty.jpg" alt="Clusterização de clientes" class="img-fluid img-small">
+        </a>
         <p>Usei Python, Estatística e técnicas de Machine Learning não supervisionadas para segmentar um grupo de clientes com base em suas características de compra, com o objetivo de formar um programa de fidelidade para aumentar a receita da empresa.</p>
         <p><strong>Ferramentas utilizadas:</strong> Python, Pandas, Matplotlib, Jupyter Notebook, K-Means, Hierarchical Clustering, DBScan, Metabase Visualization</p>
         <a href="https://github.com/andersfrr/projeto01" class="btn btn-primary">Saiba Mais</a>
 
+        <!-- Modal -->
+        <div class="modal fade" id="imagemModal" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="img/loyalty.jpg" class="img-fluid" alt="Imagem em tamanho ampliado">
+                    </div>
+                </div>
+            </div>
+        </div>
+<p> </p>
         <h3>Projeto de integração entre SQL Server e Excel</h3>
         <img src="img/print_dashboard.jpg" alt="Dashboard em Excel" class="img-fluid" style="max-width: 350px"/>
         <p>Usei SQL para definir quais tabelas e colunas seriam necessárias para criar um dashboard simples em Excel, com importação do banco de dados, uso de tabelas dinâmicas e Power Query para tratamento dos dados.</p>
         <p><strong>Ferramentas utilizadas:</strong> SQL Server, Excel</p>
         <a href="https://github.com/andersfrr/Integracao_SQL_Excel" class="btn btn-primary">Saiba Mais</a>
-
+<p> </p>
         <h3>Projeto de integração entre SQL Server e Power BI</h3>
         <img src="img/print_dashboard_BI.jpg" alt="Dashboard em Power BI" class="img-fluid" style="max-width: 350px"/>
         <p>Usei SQL para definir quais tabelas e colunas seriam necessárias para criar um dashboard em Power BI, com importação do banco de dados e criação do dashboard. O objetivo foi integrar as duas ferramentas.</p>
         <p><strong>Ferramentas utilizadas:</strong> SQL Server, Power BI</p>
         <a href="https://github.com/andersfrr/Projeto_Integracao_SQL_PowerBI" class="btn btn-primary">Saiba Mais</a>
     </section>
-
+<p> </p>
+	<hr> <!-- Separador -->
     <section id="contact">
         <h2>Entre em contato</h2>
         <p>Sinta-se à vontade para entrar em contato.</p>
